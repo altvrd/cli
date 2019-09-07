@@ -19,7 +19,14 @@ This tool has some improvements to be done and wasn't tested in all possible pla
 
 ## Installation
 
-Install it globally:
+Use it with npx:
+
+```bash
+npx altvrd --help
+npx altvrd i altmp/ls-gangwar
+```
+
+Or, if you wish, install it globally:
 
 ```bash
 npm i -g altvrd
