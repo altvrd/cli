@@ -17,7 +17,8 @@
   "scripts": {
     "test": "ava --verbose",
     "coverage": "nyc npm test",
-    "release": "release-it",
+    "prerelease": "git checkout master && git pull origin master && npm i && git add .",
+    "release": "standard-version -a",
     "commit": "git-cz"
   },
   "preferGlobal": true,
@@ -57,7 +58,8 @@
     "execa": "^2.0.4",
     "prettier": "^1.18.2",
     "release-it": "^12.3.6",
-    "sinon": "^7.4.2"
+    "sinon": "^7.4.2",
+    "standard-version": "^7.0.0"
   },
   "config": {
     "commitizen": {
