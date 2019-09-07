@@ -63,7 +63,7 @@ Use `altvrd [command] -h` to check what options each command has.
 
     > We have plans to implement a way for developers to specify what folder to install
 
-1.  Add this badge to your resource's README to show some support!
+1.  Add this badge to your resource's README to show some support! (optional, obviously)
 
     ![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)
 

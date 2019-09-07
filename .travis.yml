@@ -8,6 +8,3 @@ os:
 matrix:
   allow_failures:
     - node_js: 7
-    - os: windows
-before_install:
-  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then choco install node; fi
