@@ -22,12 +22,7 @@ const checkNewestVersion = async () => {
   const spinner = ora(
     `Checking version of ${chalk.bold(packageJson.name)}, this won't take long.`
   ).start();
-  try {
-    const lv = await latestVersion(packageJson.name);
-  } catch (e) {
-    spinner.info(`${packageJson.name} wasn't published yet. Skipping.`);
-    return;
-  }
+  const lv = await latestVersion(packageJson.name);
   spinner.stop();
   if (lv !== packageJson.version) {
     const warning =
