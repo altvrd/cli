@@ -17,8 +17,7 @@
   "scripts": {
     "test": "ava --verbose",
     "coverage": "nyc npm test",
-    "prerelease": "git checkout master && git pull origin master && npm i && git add .",
-    "release": "standard-version -a",
+    "release": "release-it --dry-run",
     "commit": "git-cz"
   },
   "preferGlobal": true,
@@ -49,6 +48,7 @@
     "unzipper": "^0.10.4"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^1.1.0",
     "ava": "^2.3.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
@@ -66,5 +66,19 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "release-it": {}
+  "release-it": {
+    "github": {
+      "release": true,
+      "releaseName": "${version}"
+    },
+    "git": {
+      "commitMessage": "chore(release): ${version}"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  }
 }
