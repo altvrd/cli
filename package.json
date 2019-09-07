@@ -1,7 +1,7 @@
 {
   "name": "altvrd",
   "label": "alt:V Resource Downloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download alt:V resources like it's 2019.",
   "repository": "https://github.com/altvrd/altv-resource-downloader",
   "engines": {
@@ -10,6 +10,10 @@
   "bin": {
     "altvrd": "cli.js"
   },
+  "files": [
+    "src/",
+    "cli.js"
+  ],
   "scripts": {
     "test": "ava --verbose",
     "coverage": "nyc npm test"
