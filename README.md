@@ -15,11 +15,11 @@ alt:V Resource Downloader is NOT maintained, affiliated or sponsored by alt:V te
 
 ## (Always in) Beta ⚡
 
-This tool has some improvements to be done and wasn't tested in all possible platforms. If you want to help this project to develop further, suggestions and bug reports on the [Issues](https://github.com/altvrd/altv-resource-downloader/issues/) section are appreciated!
+This tool has some improvements to be done and wasn't tested in all possible platforms. If you want to help this project to develop further, suggestions and bug reports on the [Issues](https://github.com/altvrd/cli/issues/) section are appreciated!
 
 ## Installation
 
-Use it with npx:
+Use it with npx (doesn't get installed on your computer):
 
 ```bash
 npx altvrd --help
