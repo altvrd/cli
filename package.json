@@ -16,7 +16,9 @@
   ],
   "scripts": {
     "test": "ava --verbose",
-    "coverage": "nyc npm test"
+    "coverage": "nyc npm test",
+    "release": "release-it",
+    "commit": "git-cz"
   },
   "preferGlobal": true,
   "keywords": [
@@ -47,17 +49,20 @@
   },
   "devDependencies": {
     "ava": "^2.3.0",
+    "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "execa": "^2.0.4",
     "prettier": "^1.18.2",
+    "release-it": "^12.3.6",
     "sinon": "^7.4.2"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "release-it": {}
 }

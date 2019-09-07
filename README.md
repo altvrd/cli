@@ -4,6 +4,7 @@
 </p>
 <p align="center">
 	<a href="https://travis-ci.com/altvrd/cli"><img src="https://travis-ci.com/altvrd/cli.svg?branch=master"></a>
+	<a href="http://commitizen.github.io/cz-cli/"><img src="https://camo.githubusercontent.com/6080f52144977b8b2b20e42408379ce68371aafd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6d6d6974697a656e2d667269656e646c792d627269676874677265656e2e737667"></a>
 </p>
 <p align="center">
 	<h6 align="center">THIS TOOL IS IN BETA. <a href="#always-in-beta-">READ HERE</a>.</h6>
@@ -56,13 +57,21 @@ Use `altvrd [command] -h` to check what options each command has.
 
 ## How to publish my resource?
 
-1. Publish your resource on GitHub (GitLab and Bitbucket support coming soon!)
-1. Use [releases](https://help.github.com/en/articles/creating-releases) and [semantic versioning](https://semver.org/) for the tool to detect updates correctly (optional, but if you don't the tool will always download from `master` branch)
-1. Keep your resource at root level (don't nest it)
+1.  Publish your resource on GitHub (GitLab and Bitbucket support coming soon!)
+1.  Use [releases](https://help.github.com/en/articles/creating-releases) and [semantic versioning](https://semver.org/) for the tool to detect updates correctly (optional, but if you don't the tool will always download from `master` branch)
+1.  Keep your resource at root level (don't nest it)
 
-   > We have plans to implement a way for developers to specify what folder to install
+    > We have plans to implement a way for developers to specify what folder to install
 
-1. Add it to our [awesome-altv-resources](https://github.com/altvrd/awesome-altv-resources) list! :sparkles: (optional)
+1.  Add this badge to your resource's README to show some support!
+
+    ![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)
+
+    ```markdown
+    ![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)
+    ```
+
+1.  Add it to our [awesome-altv-resources](https://github.com/altvrd/awesome-altv-resources) list :sparkles: (optional)
 
 ## What is `altvrd.json`?
 
