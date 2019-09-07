@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-<h6 align="center">THIS TOOL IS IN BETA. <a href="#beta">READ HERE</a>.</h6>
+<h6 align="center">THIS TOOL IS IN BETA. <a href="#always-in-beta-">READ HERE</a>.</h6>
 </p>
 
 ## Introduction
@@ -22,7 +22,7 @@ This tool has some improvements to be done and wasn't tested in all possible pla
 Install it globally:
 
 ```bash
-npm i -g altv-resource-downloader
+npm i -g altvrd
 altvrd --help
 ```
 

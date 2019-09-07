@@ -1,5 +1,5 @@
 {
-  "name": "altv-resource-downloader",
+  "name": "altvrd",
   "label": "alt:V Resource Downloader",
   "version": "0.1.0",
   "description": "Download alt:V resources like it's 2019.",
