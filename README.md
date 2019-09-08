@@ -11,15 +11,16 @@
 <p align="center">
 	<h6 align="center">THIS TOOL IS IN BETA. <a href="#always-in-beta-">READ HERE</a>.</h6>
 </p>
-<p align="center">
-<img src="screencast.svg" width="600">
-</p>
 
 ## Introduction
 
 To install new [alt:V resources](https://altv.mp) into your project nowadays is a 100% manual process that can give you a lot of headaches if done incorrectly. **alt:V Resource Downloader** comes with the mission to bridge the gap between developers and server owners to make collaboration in our community easier, and help with this process.
 
 alt:V Resource Downloader is NOT maintained, affiliated or sponsored by alt:V team. Any requests or bugs should be addressed in this repository's issues section or talking directly to `vanessa#7275`, and nowhere else.
+
+<p align="center">
+<img src="screencast.svg" width="600">
+</p>
 
 ## (Always in) Beta ⚡
 
