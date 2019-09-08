@@ -67,7 +67,8 @@
   "release-it": {
     "github": {
       "release": true,
-      "releaseName": "${version}"
+      "releaseName": "${version}",
+      "draft": true
     },
     "git": {
       "commitMessage": "chore(release): ${version}"

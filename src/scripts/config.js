@@ -158,9 +158,7 @@ const checkAndCreate = async () => {
         {
           type: 'confirm',
           name: 'createFile',
-          message:
-            `The configuration file ${CONFIG_FILE_NAME} doesn't exist in this directory. ` +
-            'Do you want to create it?',
+          message: `We couldn't find ${CONFIG_FILE_NAME} here. Do you want to create it?`,
           default: true
         }
       ])
