@@ -11,6 +11,9 @@
 <p align="center">
 	<h6 align="center">THIS TOOL IS IN BETA. <a href="#always-in-beta-">READ HERE</a>.</h6>
 </p>
+<p align="center">
+<img src="screencast.svg" width="600">
+</p>
 
 ## Introduction
 
