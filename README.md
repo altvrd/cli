@@ -52,8 +52,6 @@ altvrd uninstall altmp/ls-gangwar
 # or altvrd u altmp/ls-gangwar
 ```
 
-###### If you rename folders once they're installed, don't forget to rename the `folder` option on the [altvrd configuration file](#what-is-altvrdjson). This tool isn't smart enough - yet! - to detect renames (but it is to detect anomalies, so you'll receive a warning nevertheless).
-
 ## Available commands
 
 Use `altvrd [command] -h` to check what options each command has.
