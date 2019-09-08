@@ -123,11 +123,12 @@ const installedMessage = (resource, data) => {
 
 const installResource = async (resourcePath, data, args) => {
   const resource = configFile.getResource(resourcePath);
-  if (resource.isInstalled && resource.hasFolder) {
-    if (!args.force) {
+  if (resource.isInstalled) {
+    await configFile.utils.detectResourceAnomaly(resource, args);
+
+    if (resource.hasFolder && !args.force) {
       await confirmDeletion(resource);
     }
-    await configFile.utils.detectResourceAnomaly(resource);
   }
   SPINNER.start('Downloaded the resource. Installing it.');
   const folder = configFile.utils.resolveInstallationFolder(resourcePath);
@@ -137,6 +138,9 @@ const installResource = async (resourcePath, data, args) => {
     text: installedMessage(resource, data),
     symbol: '✨'
   });
+  SPINNER.info(
+    `Add "${folder.name}" to your .cfg file (under ${chalk.bold('resources')}) section to use it.`
+  );
 };
 
 module.exports = installResource;

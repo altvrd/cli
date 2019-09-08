@@ -47,12 +47,14 @@ const read = () => {
 
 // Resource management
 
-const _resourceFolderExists = (resource) =>
-  fs.existsSync(path.resolve(process.cwd(), `./resources/${resource.folder}`));
+const _resourceFolderExists = (folderName) =>
+  fs.existsSync(path.resolve(process.cwd(), `./resources/${folderName}`));
+
+const _parseFolderDefaultName = (name) => name.replace(/\//, '@');
 
 const resolveInstallationFolder = (resourcePath) => {
   const existentResource = getResource(resourcePath);
-  let folderName = resourcePath.replace(/\//, '@');
+  let folderName = _parseFolderDefaultName(resourcePath);
   if (existentResource && existentResource.hasFolder) {
     // If a folder already exists and, for some reason, was renamed, use it
     folderName = existentResource.data.folder;
@@ -71,7 +73,7 @@ const getResource = (name) => {
   const value = { name, isInstalled: !!resource };
   if (resource) {
     value['data'] = resource;
-    value['hasFolder'] = _resourceFolderExists(resource);
+    value['hasFolder'] = _resourceFolderExists(resource.folder);
   }
   return value;
 };
@@ -109,14 +111,37 @@ const deleteResource = async (resource) => {
   _writeToConfigFile(configs);
 };
 
-const detectResourceAnomaly = (resource) => {
-  if (!resource) return;
-  if (resource.isInstalled && !resource.hasFolder) {
-    SPINNER.warn(
-      `${chalk.yellow.bold('WARNING:')} This resource is installed but its folder wasn't found. ` +
-        `Please, if you rename a folder, make sure to rename it on ${chalk.bold('altvrd.json')} ` +
-        `as well.`
-    );
+const defaultFolderExists = (name) => {
+  const normalized = _parseFolderDefaultName(name);
+  return _resourceFolderExists(normalized);
+};
+
+const detectResourceAnomaly = (resource, args) => {
+  // This is called when the installation is already checked, but it's better to be safe than sorry
+  if (resource.isInstalled) {
+    const boldFileName = chalk.bold(CONFIG_FILE_NAME);
+    if (!resource.hasFolder && !args.force) {
+      if (defaultFolderExists(resource.name)) {
+        const normalizedName = _parseFolderDefaultName(resource.name);
+        SPINNER.fail(
+          `A folder for this resource exists under the name of "${normalizedName}" when ` +
+            `the name on ${boldFileName} is "${resource.data.folder}".`
+        );
+        SPINNER.fail(
+          `Please, rename the folder to "${resource.data.folder}" or change on ` +
+            `${boldFileName} to proceed.`
+        );
+        process.exit(1);
+      } else {
+        const uninstallCmd = chalk.yellow(`${packageJson.name} u ${resource.name}`);
+        SPINNER.fail(`This resource is installed on ${boldFileName} but its folder wasn't found.`);
+        SPINNER.fail(
+          `Please, if you rename a folder, make sure to rename it on the configuration file as well.`
+        );
+        SPINNER.fail(`Fix the folder name or uninstall it (${uninstallCmd}) to proceed.`);
+        process.exit(1);
+      }
+    }
   }
 };
 

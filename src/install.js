@@ -24,7 +24,7 @@ const runInstall = (resourcePath, args) => {
     const resource = configFile.getResource(resourcePath);
     if (resource.isInstalled) {
       const shouldUpdate = configFile.utils.shouldUpdate(resource, data.version);
-      if (!shouldUpdate && !args.force) {
+      if (!shouldUpdate && !!resource.hasFolder && !args.force) {
         SPINNER.succeed(
           `You already have the latest version of ${chalk.bold(resource.name)} installed.`
         );

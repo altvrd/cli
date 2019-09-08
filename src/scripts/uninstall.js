@@ -32,7 +32,7 @@ const uninstallResource = async (resourcePath, args) => {
     SPINNER.fail(`The resource ${resource.name} isn't installed.`);
     process.exit(1);
   }
-  if (!args.force) {
+  if (resource.hasFolder && !args.force) {
     await _confirmDeletion(resource);
   }
   const folder = configFile.utils.resolveInstallationFolder(resource.name);
