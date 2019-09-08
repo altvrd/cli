@@ -18,7 +18,8 @@
     "test": "echo 'Tests are disabled by now.'",
     "coverage": "nyc npm test",
     "release": "release-it",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "screencast": "sh tasks/run-screencast.sh"
   },
   "preferGlobal": true,
   "keywords": [
