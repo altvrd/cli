@@ -7,7 +7,7 @@
 set -e
 
 typing() {
-	echo $1 | pv -qL $[10+(-2 + RANDOM%5)]
+	echo $1 | pv -qL $((10 + (-2 + RANDOM % 5)))
 }
 
 # Execution
@@ -17,14 +17,13 @@ typing "altvrd install altmp/ls-gangwar"
 altvrd install altmp/ls-gangwar
 
 printf '\e[32m%s\e[m' "~ "
-sleep 1
+sleep 2
 typing "cat altvrd.json"
 cat altvrd.json
 echo ''
 
 printf '\e[32m%s\e[m' "~ "
-sleep 1
+sleep 2
 typing "ls resources/"
 ls resources
-sleep 1
-echo ''
+sleep 4 && echo ''
