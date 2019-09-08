@@ -1,7 +1,7 @@
 {
   "name": "altvrd",
   "label": "alt:V Resource Downloader",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Download alt:V resources like it's 2019.",
   "repository": "https://github.com/altvrd/altv-resource-downloader",
   "engines": {
@@ -17,7 +17,7 @@
   "scripts": {
     "test": "ava --verbose",
     "coverage": "nyc npm test",
-    "release": "release-it --dry-run",
+    "release": "release-it",
     "commit": "git-cz"
   },
   "preferGlobal": true,
@@ -79,6 +79,11 @@
         "preset": "angular",
         "infile": "CHANGELOG.md"
       }
+    },
+    "hooks": {
+      "before:bump": [
+        "npm test"
+      ]
     }
   }
 }
