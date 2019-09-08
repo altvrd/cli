@@ -3,7 +3,7 @@
   "label": "alt:V Resource Downloader",
   "version": "1.0.2",
   "description": "Download alt:V resources like it's 2019.",
-  "repository": "https://github.com/altvrd/altv-resource-downloader",
+  "repository": "https://github.com/altvrd/cli",
   "engines": {
     "node": ">=8"
   },
