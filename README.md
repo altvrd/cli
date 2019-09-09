@@ -4,9 +4,8 @@
 </p>
 <p align="center">
 	<a href="https://travis-ci.com/altvrd/cli"><img src="https://travis-ci.com/altvrd/cli.svg?branch=master"></a>
-	<a href="http://commitizen.github.io/cz-cli/"><img src="https://camo.githubusercontent.com/6080f52144977b8b2b20e42408379ce68371aafd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6d6d6974697a656e2d667269656e646c792d627269676874677265656e2e737667"></a>
 	<a href="https://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" title="MIT License"></a>
-	<img src="https://badgen.net/npm/v/altvrd" title="Version on npm">
+	<a href="https://www.npmjs.com/package/altvrd"><img src="https://badgen.net/npm/v/altvrd" title="Version on npm"></a>
 </p>
 <p align="center">
 	<h6 align="center">THIS TOOL IS IN BETA. <a href="#always-in-beta-">READ HERE</a>.</h6>
@@ -69,10 +68,10 @@ Use `altvrd [command] -h` to check what options each command has.
 
 1.  Add this badge to your resource's README to show some support! (optional, obviously)
 
-    ![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)
+    [![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)](https://github.com/altvrd/cli)
 
     ```markdown
-    ![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)
+    [![altvrd friendly](https://img.shields.io/badge/altvrd-friendly-50753A)](https://github.com/altvrd/cli)
     ```
 
 1.  Add it to our [awesome-altv-resources](https://github.com/altvrd/awesome-altv-resources) list :sparkles: (optional)
