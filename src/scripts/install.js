@@ -139,7 +139,7 @@ const installResource = async (resourcePath, data, args) => {
     symbol: '✨'
   });
   SPINNER.info(
-    `Add "${folder.name}" to your .cfg file (under ${chalk.bold('resources')}) section to use it.`
+    `Add "${folder.name}" to your .cfg file (under ${chalk.bold('resources')} section) to use it.`
   );
 };
 
