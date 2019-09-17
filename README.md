@@ -7,9 +7,6 @@
 	<a href="https://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" title="MIT License"></a>
 	<a href="https://www.npmjs.com/package/altvrd"><img src="https://badgen.net/npm/v/altvrd" title="Version on npm"></a>
 </p>
-<p align="center">
-	<h6 align="center">THIS TOOL IS IN BETA. <a href="#always-in-beta-">READ HERE</a>.</h6>
-</p>
 
 ## Introduction
 
@@ -18,10 +15,10 @@ To install new [alt:V resources](https://altv.mp) into your project nowadays is 
 alt:V Resource Downloader is NOT maintained, affiliated or sponsored by alt:V team. Any requests or bugs should be addressed in this repository's issues section or talking directly to `vanessa#7275`, and nowhere else.
 
 <p align="center">
-<img src="screencast.svg" width="600">
+<img src="screencast.svg" width="650">
 </p>
 
-## (Always in) Beta ⚡
+## (Always in) Beta
 
 This tool has some improvements to be done and wasn't tested in all possible platforms. If you want to help this project to develop further, suggestions and bug reports on the [Issues](https://github.com/altvrd/cli/issues/) section are appreciated!
 
