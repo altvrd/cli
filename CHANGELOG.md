@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/altvrd/cli/compare/1.1.0...1.1.1) (2019-09-17)
+
+
+### Bug Fixes
+
+* **install:** fix post install message typo ([421e70e](https://github.com/altvrd/cli/commit/421e70e))
+
 # [1.1.0](https://github.com/altvrd/cli/compare/1.0.2...1.1.0) (2019-09-08)
 
 
