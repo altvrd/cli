@@ -1,6 +1,6 @@
 <p align="center">
 	<img src="https://i.imgur.com/4b33Qbj.png" width="600">
-	<h3 align="center">Download resources like it's 2019.</h3>
+	<h3 align="center">Download resources like it's 2020.</h3>
 </p>
 <p align="center">
 	<a href="https://travis-ci.com/altvrd/cli"><img src="https://travis-ci.com/altvrd/cli.svg?branch=master"></a>
