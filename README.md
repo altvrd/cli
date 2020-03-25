@@ -6,6 +6,7 @@
 	<a href="https://travis-ci.com/altvrd/cli"><img src="https://travis-ci.com/altvrd/cli.svg?branch=master"></a>
 	<a href="https://opensource.org/licenses/MIT"><img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" title="MIT License"></a>
 	<a href="https://www.npmjs.com/package/altvrd"><img src="https://badgen.net/npm/v/altvrd" title="Version on npm"></a>
+	<a href="https://codeclimate.com/github/altvrd/cli/maintainability"><img src="https://api.codeclimate.com/v1/badges/cec41bb5129156b0e888/maintainability" /></a>
 </p>
 
 ## Introduction
